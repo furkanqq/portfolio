@@ -1,0 +1,36 @@
+.container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.container .content p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container .content .social {
+  display: flex;
+  gap: 8px;
+}
+
+.container .content .social a{
+  text-decoration: none;
+  color: black;
+}
+
+.container .content .social a span {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.container .content .social a span:hover {
+  transition: 300ms;
+  color: var(--first-color);
+}
