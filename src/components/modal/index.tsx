@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './modal.module.css';
+import info, { IInfoType } from '../../config/information.config';
+import Icon from '../shared/icons/icons';
 
 interface PropsTypes {
   isOpen: boolean;
@@ -22,7 +24,37 @@ export default function Modal(props: PropsTypes) {
           <div className={styles.image_part}>
             <div className={styles.image_holder}></div>
           </div>
-          <div className={styles.info_part}></div>
+          <div className={styles.info_part}>
+            <div className={styles.name}>FURKAN İLHAN</div>
+            <div className={styles.info}>
+              {info.map((x: IInfoType, index) => (
+                <div key={index}>
+                  {x.describe !== 'Download' ? (
+                    <p>
+                      <span>{x.title}: </span> {x.describe}
+                    </p>
+                  ) : (
+                    <p>
+                      <span>{x.title}: </span>
+                      <a
+                        href={
+                          'https://cdn.discordapp.com/attachments/718189165430308988/1194986579798798416/Furkan_Ilhan_CV.pdf?ex=65b258fa&is=659fe3fa&hm=f646da64176f82ede0c5096f2840284bbe7e38f3fc798238cc470754c7d03e47&'
+                        }
+                        download="Furkan_Ilhan_CV"
+                        target="_blank"
+                        rel="noreferrer">
+                        {x.describe}
+                      </a>
+                      <span>
+                        <Icon icon={'download'} />
+                      </span>
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
     </React.Fragment>

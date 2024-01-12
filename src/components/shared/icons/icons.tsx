@@ -23,6 +23,7 @@ const Icon = ({ icon, ...props }: Props) => {
     twitter: <Icons.Twitter {...props} />,
     linkedin: <Icons.Linkedin {...props} />,
     github: <Icons.Github {...props} />,
+    download: <Icons.Download {...props} />,
   };
 
   if (!match[icon]) return null;

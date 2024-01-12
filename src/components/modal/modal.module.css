@@ -14,7 +14,7 @@
   width: 100%;
   background-color: white;
   padding-block: 36px;
-  padding-inline: 64px;
+  padding-inline: 160px;
   box-sizing: border-box;
   transition: 600ms ease-out;
 }
@@ -63,6 +63,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  gap: 44px;
 }
 
 .content .image_part {
@@ -71,7 +72,7 @@
   justify-content: center;
   border: 4px solid var(--first-color);
   height: 80%;
-  width: 26%;
+  width: 360px;
 }
 .content .image_part .image_holder {
   position: absolute;
@@ -83,4 +84,55 @@
   background-position: center;
   height: 380px;
   width: 85%;
+}
+
+.content .info_part {
+  height: 100%;
+  width: 72%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.content .info_part .name {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.content .info_part .info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 12px;
+}
+
+.content .info_part .info div {
+  display: flex;
+  flex: 1;
+  min-width: 200px;
+}
+
+.content .info_part .info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .info_part .info p span {
+  color: #1f1f1f83;
+  margin-right: 4px;
+}
+
+
+.content .info_part .info p span:nth-child(3) {
+  color: #1f1f1f83;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+
+.content .info_part .info p a {
+  color: var(--first-color);
+  text-decoration: none;
+  font-weight: 600;
 }
