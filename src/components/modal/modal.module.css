@@ -1,10 +1,13 @@
 .container {
   position: absolute;
-  bottom: -450px;
-  height: 400px;
+  bottom: -550px;
+  height: 460px;
   width: 100%;
   background-color: white;
-  transition: 300ms ease-out;
+  padding-block: 36px;
+  padding-inline: 160px;
+  box-sizing: border-box;
+  transition: bottom 300ms ease-out;
 }
 
 .container_visible {
@@ -16,7 +19,7 @@
   padding-block: 36px;
   padding-inline: 160px;
   box-sizing: border-box;
-  transition: 600ms ease-out;
+  transition: bottom 600ms ease-out;
 }
 
 .background {
@@ -123,7 +126,6 @@
   color: #1f1f1f83;
   margin-right: 4px;
 }
-
 
 .content .info_part .info p span:nth-child(3) {
   color: #1f1f1f83;
