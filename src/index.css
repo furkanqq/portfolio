@@ -6,13 +6,34 @@ body {
   box-sizing: border-box;
 }
 
-:root {
+.main:root {
   --first-color: #750175;
-  --second-color: #7c928f;
-  --third-color: #0000e4;
-  --fourth-color: #e4a700;
-  --fifth-color: #645162;
-  --sixth-color: #17bf33;
-  --seventh-color: #0da8a1;
-  --eighth-color: #bf0808;
+}
+
+.second:root {
+  --first-color: #7c928f;
+}
+
+.third:root {
+  --first-color: #0000e4;
+}
+
+.fourth:root {
+  --first-color: #e4a700;
+}
+
+.fifth:root {
+  --first-color: #645162;
+}
+
+.sixth:root {
+  --first-color: #17bf33;
+}
+
+.seventh:root {
+  --first-color: #0da8a1;
+}
+
+.eighth:root {
+  --first-color: #bf0808;
 }

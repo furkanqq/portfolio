@@ -42,6 +42,7 @@
   text-align: center;
   letter-spacing: 3px;
   font-weight: bolder;
+  user-select: none;
 }
 .container .text p {
   text-align: center;

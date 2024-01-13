@@ -8,7 +8,9 @@ export default function Information() {
       <div className={styles.container}>
         <div className={styles.content}>
           <p>+90 545 663 19 49</p>
-          <p>furkanilhanresmi@gmail.com</p>
+          <p>
+            <a href="mailto:furkanilhanresmi@gmail.com">furkanilhanresmi@gmail.com</a>
+          </p>
           <p>Istanbul, Turkiye</p>
           <div className={styles.social}>
             <a

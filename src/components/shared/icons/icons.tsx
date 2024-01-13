@@ -24,6 +24,8 @@ const Icon = ({ icon, ...props }: Props) => {
     linkedin: <Icons.Linkedin {...props} />,
     github: <Icons.Github {...props} />,
     download: <Icons.Download {...props} />,
+    setting: <Icons.Setting {...props} />,
+    close: <Icons.Close {...props} />,
   };
 
   if (!match[icon]) return null;

@@ -9,6 +9,13 @@
   font-weight: 300;
 }
 
+.container .content p a {
+  margin: 0;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+
 .container .content {
   display: flex;
   flex-direction: column;
@@ -20,7 +27,7 @@
   gap: 8px;
 }
 
-.container .content .social a{
+.container .content .social a {
   text-decoration: none;
   color: black;
 }

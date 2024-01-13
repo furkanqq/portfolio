@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './home.module.css';
 import Information from '../../components/information/index';
 import Footer from '../../components/footer';
-import Modal from '../../components/modal';
-// #F4F4F4
+import ColorPicker from '../../components/color';
 export default function Home() {
   return (
     <React.Fragment>
       <div className={styles.container}>
+        <ColorPicker />
         <Information />
         <div className={styles.text}>
           <h1>Hello!</h1>

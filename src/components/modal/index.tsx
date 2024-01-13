@@ -19,7 +19,7 @@ export default function Modal(props: PropsTypes) {
       <div
         className={props.isOpen ? styles.container : styles.container_visible}>
         <div className={styles.close_button} onClick={props.handleIsOpen}>
-          <span>X</span>
+          <span><Icon icon={'close'}/></span>
         </div>
         <div className={styles.content}>
           <div className={styles.image_part}>

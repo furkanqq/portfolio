@@ -4,8 +4,8 @@
   height: 460px;
   width: 100%;
   background-color: white;
-  padding-block: 36px;
-  padding-inline: 160px;
+  padding-block: 32px;
+  padding-inline: 140px;
   box-sizing: border-box;
   transition: bottom 300ms ease-out;
 }
@@ -16,8 +16,8 @@
   height: 460px;
   width: 100%;
   background-color: white;
-  padding-block: 36px;
-  padding-inline: 160px;
+  padding-block: 32px;
+  padding-inline: 140px;
   box-sizing: border-box;
   transition: bottom 600ms ease-out;
 }
@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  gap: 44px;
+  gap: 60px;
 }
 
 .content .image_part {
@@ -114,6 +114,7 @@
   display: flex;
   flex: 1;
   min-width: 200px;
+  border: 1px solid transparent;
 }
 
 .content .info_part .info p {
@@ -142,16 +143,17 @@
 .content .info_part .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   margin-left: 12px;
 }
 
 .content .info_part .skills div {
   display: flex;
   flex: 1;
+  max-width: 120px;
   min-width: 120px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column-reverse;
   gap: 4px;
   height: 72px;
