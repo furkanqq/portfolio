@@ -138,3 +138,21 @@
   text-decoration: none;
   font-weight: 600;
 }
+
+.content .info_part .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+.content .info_part .skills div {
+  display: flex;
+  flex: 1;
+  min-width: 120px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 4px;
+  height: 72px;
+}
