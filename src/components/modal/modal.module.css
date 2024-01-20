@@ -80,13 +80,13 @@
 .content .image_part .image_holder {
   position: absolute;
   top: -38px;
-  border: 4px solid white;
+  border-inline: 6px solid white;
   background-image: url(../../assets/image/1684620138660.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 380px;
-  width: 85%;
+  width: 92%;
 }
 
 .content .info_part {
@@ -106,7 +106,7 @@
 .content .info_part .info {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 4x;
   margin-left: 12px;
 }
 
@@ -152,9 +152,113 @@
   flex: 1;
   max-width: 120px;
   min-width: 120px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column-reverse;
   gap: 4px;
   height: 72px;
+}
+
+.content .info_part .skills div img {
+  border-radius: 10px;
+}
+
+@media (max-width: 1280px) {
+  .container,
+  .container_visible {
+    padding-inline: 40px;
+  }
+  .content .info_part .skills {
+    gap: 4px;
+  }
+  .content {
+    gap: 40px;
+  }
+  .content .info_part {
+    gap: 4px;
+  }
+  .content .info_part .skills div {
+    max-width: 92px;
+    min-width: 92px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .container_visible {
+    height: 532px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .content .image_part {
+    position: initial;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--first-color);
+    padding: 4px;
+  }
+  .content .image_part .image_holder {
+    border: 0px solid white;
+    position: initial;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .content .info_part {
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    width: 100%;
+  }
+
+  .content .info_part .info {
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .content .info_part .name {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .content .info_part .info div {
+    max-width: 220px;
+    justify-content: center;
+  }
+
+  .content .info_part .skills {
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .content .info_part .skills div {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_visible {
+    height: 560px;
+  }
+
+  .content {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container_visible {
+    height: 380px;
+  }
+
+  .content .info_part {
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
 }

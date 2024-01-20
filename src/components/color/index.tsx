@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './color.module.css';
-import { useColor } from '../../contexts/color';
 import Icon from '../shared/icons/icons';
 import colorList, { IColorListType } from '../../config/color.config';
 

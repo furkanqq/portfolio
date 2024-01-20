@@ -42,3 +42,11 @@
   transition: 300ms;
   color: var(--first-color);
 }
+
+
+@media (max-width: 576px) {
+  .container {
+  top: 12px;
+  left: 12px;
+  }
+}

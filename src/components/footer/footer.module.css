@@ -101,3 +101,23 @@
   transform: scale(0.95);
   transition: 200ms;
 }
+
+@media (max-width: 1021px) {
+  .container .middle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .container .middle {
+    display: none;
+  }
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    gap: 16px;
+  }
+}

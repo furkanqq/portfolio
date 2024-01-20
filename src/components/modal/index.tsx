@@ -13,13 +13,14 @@ export default function Modal(props: PropsTypes) {
   return (
     <React.Fragment>
       <div
-        className={
-          props.isOpen ? styles.background : styles.background_visible
-        }></div>
+        className={props.isOpen ? styles.background : styles.background_visible}
+        onClick={props.handleIsOpen}></div>
       <div
         className={props.isOpen ? styles.container : styles.container_visible}>
         <div className={styles.close_button} onClick={props.handleIsOpen}>
-          <span><Icon icon={'close'}/></span>
+          <span>
+            <Icon icon={'close'} />
+          </span>
         </div>
         <div className={styles.content}>
           <div className={styles.image_part}>
@@ -63,13 +64,7 @@ export default function Modal(props: PropsTypes) {
                       src={`skillsIcon/${x.icon}`}
                       alt="icon"
                       width={40}
-                      height={
-                        x.icon === 'sass.png' ||
-                        x.icon === 'tailwind.png' ||
-                        x.icon === 'nextjs.png'
-                          ? 28
-                          : 40
-                      }
+                      height={40}
                     />
                   )}
                 </div>
