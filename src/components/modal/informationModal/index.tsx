@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './modal.module.css';
-import info, { IInfoType } from '../../config/information.config';
-import Icon from '../shared/icons/icons';
-import skills, { ISkillsType } from '../../config/skills.config';
+import info, { IInfoType } from '../../../config/information.config';
+import Icon from '../../shared/icons/icons';
+import skills, { ISkillsType } from '../../../config/skills.config';
 
 interface PropsTypes {
   isOpen: boolean;

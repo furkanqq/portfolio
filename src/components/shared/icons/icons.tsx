@@ -26,6 +26,7 @@ const Icon = ({ icon, ...props }: Props) => {
     download: <Icons.Download {...props} />,
     setting: <Icons.Setting {...props} />,
     close: <Icons.Close {...props} />,
+    arrowLeft: <Icons.ArrowLeft {...props} />,
   };
 
   if (!match[icon]) return null;

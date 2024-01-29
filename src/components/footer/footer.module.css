@@ -52,12 +52,13 @@
   font-weight: 300;
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
   gap: 18px;
   width: 208px;
   height: 100%;
 }
 
-.container .end button {
+.container .end .about {
   position: relative;
   width: 100%;
   height: 52px;
@@ -72,7 +73,7 @@
   font-family: 'Outfit', sans-serif;
 }
 
-.container .end button::after {
+.container .end .about::after {
   content: 'About Me';
   position: absolute;
   left: 0;
@@ -87,17 +88,64 @@
   color: white;
 }
 
-.container .end button:hover::after {
+.container .end .about:hover::after {
   top: 0;
   transition: 300ms;
 }
 
-.container .end button:hover {
+.container .end .about:hover {
   padding-bottom: 50px;
   transition: 400ms;
 }
 
-.container .end button:active {
+.container .end .about:active {
+  transform: scale(0.95);
+  transition: 200ms;
+}
+
+.container .end .portfolio {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  margin: 0;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 200ms;
+  overflow: hidden;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--first-color);
+  color: white;
+}
+
+.container .end .portfolio::after {
+  content: 'My Portfolio';
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  height: 52px;
+  background-color: #efefef;
+  transition: 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.container .end .portfolio:hover::after {
+  top: 0;
+  transition: 300ms;
+}
+
+.container .end .portfolio:hover {
+  padding-bottom: 50px;
+  transition: 400ms;
+}
+
+.container .end .portfolio:active {
   transform: scale(0.95);
   transition: 200ms;
 }

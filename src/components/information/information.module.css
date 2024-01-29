@@ -34,12 +34,12 @@
 }
 
 .container .content .social a span {
-  transition: 300ms;
+  transition: 200ms;
   cursor: pointer;
 }
 
 .container .content .social a span:hover {
-  transition: 300ms;
+  transition: 200ms;
   color: var(--first-color);
 }
 

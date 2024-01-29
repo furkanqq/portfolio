@@ -7,7 +7,7 @@ export default function Information() {
     <React.Fragment>
       <div className={styles.container}>
         <div className={styles.content}>
-          <p>+90 545 663 19 49</p>
+          <p></p>
           <p>
             <a href="mailto:furkanilhanresmi@gmail.com">furkanilhanresmi@gmail.com</a>
           </p>
