@@ -1,0 +1,49 @@
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 24px;
+    line-height: 24px;
+    min-height: 24px;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    &[data-size='sm'] {
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    &[data-size='sm'] {
+      padding: 8px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    &[data-size='lg'] {
+      padding: 12px 36px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    &[data-size='expand'] {
+      padding: 12px 36px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 16px;
+      inline-size: 100% !important;
+    }
+    &:active {
+      transition: transform 0.2s;
+      transform: scale(0.94);
+    }
+  }
+  .button[disabled] {
+    opacity: 0.4;
+  }
+  
