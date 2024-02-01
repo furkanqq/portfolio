@@ -59,7 +59,9 @@ export default function PortfolioModal(props: PropsTypes) {
                   index === hoveredCardIndex ? styles.infoHover : styles.info
                 }>
                 <p>{x.desc}</p>
-                <button className={styles.direction}>Visit</button>
+                <a href={x.link} target="_blank" rel="noreferrer">
+                  <button className={styles.direction}>Visit</button>
+                </a>
               </div>
             </div>
           ))}
