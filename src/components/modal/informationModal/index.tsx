@@ -40,7 +40,7 @@ export default function Modal(props: PropsTypes) {
                       <span>{x.title}: </span>
                       <a
                         href={
-                          'https://cdn.discordapp.com/attachments/718189165430308988/1194986579798798416/Furkan_Ilhan_CV.pdf?ex=65b258fa&is=659fe3fa&hm=f646da64176f82ede0c5096f2840284bbe7e38f3fc798238cc470754c7d03e47&'
+                          'https://cdn.discordapp.com/attachments/718189165430308988/1217491062009102426/Furkan_Ilhan_CV.pdf?ex=660437e9&is=65f1c2e9&hm=5da3564a80fa0551f245000afba489e8476a39a2ff228d64aab4949efcb9f414&'
                         }
                         download="Furkan_Ilhan_CV"
                         target="_blank"
