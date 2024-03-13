@@ -347,4 +347,8 @@
   .content .cardHover {
     min-width: 320px !important;
   }
+
+  .content .cardHover .infoHover {
+    width: 65%;
+  }
 }

@@ -33,6 +33,12 @@ const portfolio: PortfolioType[] = [
     link: 'https://www.npmjs.com/settings/murki/packages',
   },
   {
+    title: 'IDO Launchpad',
+    desc: 'ReactJS, NextJS, Ethers, Web3, Wagmi, Viem, Smart Contract, Solidity, ABI, NestJS,',
+    img: Images.IDO,
+    link: 'https://ido-balancenetwork.io/',
+  },
+  {
     title: 'Balance Solution',
     desc: 'NextJS, SCSS, Rest API, Redux, TypeScript, Responsive Design',
     img: Images.Solution,

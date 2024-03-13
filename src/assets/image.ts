@@ -7,6 +7,7 @@ import Blog from './image/blog1.jpeg';
 import Solution from './image/solution.jpeg';
 import Landing from './image/landing1.jpeg';
 import NPM from './image/npm.png';
+import IDO from './image/ido.png';
 
 type ImagesType = {
   [key: string]: any;
@@ -22,6 +23,7 @@ const Images: ImagesType = {
   Solution,
   Landing,
   NPM,
+  IDO,
 };
 
 export default Images;
