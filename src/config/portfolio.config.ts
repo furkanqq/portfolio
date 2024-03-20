@@ -24,19 +24,19 @@ const portfolio: PortfolioType[] = [
     title: 'NFT Marketplace',
     desc: 'NextJS, TypeScript, Tailwind, Redux, Web3, Wagmi, ESLint, Prettier, Responsive Design',
     img: Images.NFT,
-    link: 'https://nft-balancenetwork.io/',
+    link: 'https://nft.balancenetwork.io/',
   },
   {
     title: 'NPM Packages',
     desc: 'NodeJS, JS, Npm Package Manager',
     img: Images.NPM,
-    link: 'https://www.npmjs.com/settings/murki/packages',
+    link: 'https://www.npmjs.com/~murki',
   },
   {
     title: 'IDO Launchpad',
     desc: 'ReactJS, NextJS, Ethers, Web3, Wagmi, Viem, Smart Contract, Solidity, ABI, NestJS,',
     img: Images.IDO,
-    link: 'https://ido-balancenetwork.io/',
+    link: 'https://ido.balancenetwork.io/',
   },
   {
     title: 'Balance Solution',
@@ -52,7 +52,7 @@ const portfolio: PortfolioType[] = [
   },
   {
     title: 'Denizcilik Tahkim',
-    desc: 'Responsive Design',
+    desc: 'Responsive Design, Html, Css',
     img: Images.DTK,
     link: 'https://denizciliktahkim.org/',
   },
