@@ -23,3 +23,8 @@ declare module '*.webp' {
   export default content;
 }
 
+declare module '*.pdf' {
+  const content: { [className: string]: string };
+  export default content;
+}
+

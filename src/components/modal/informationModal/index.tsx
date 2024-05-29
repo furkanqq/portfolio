@@ -3,6 +3,7 @@ import styles from './modal.module.css';
 import info, { IInfoType } from '../../../config/information.config';
 import Icon from '../../shared/icons/icons';
 import skills, { ISkillsType } from '../../../config/skills.config';
+import PDF from '../../../assets/pdf/Furkan_Ilhan_CV.pdf';
 
 interface PropsTypes {
   isOpen: boolean;
@@ -39,10 +40,8 @@ export default function Modal(props: PropsTypes) {
                     <p>
                       <span>{x.title}: </span>
                       <a
-                        href={
-                          'https://cdn.discordapp.com/attachments/718189165430308988/1217491062009102426/Furkan_Ilhan_CV.pdf?ex=660437e9&is=65f1c2e9&hm=5da3564a80fa0551f245000afba489e8476a39a2ff228d64aab4949efcb9f414&'
-                        }
-                        download="Furkan_Ilhan_CV"
+                        href={PDF}
+                        download="Furkan_Ilhan_CV.pdf"
                         target="_blank"
                         rel="noreferrer">
                         {x.describe}

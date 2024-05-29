@@ -6,7 +6,7 @@ export interface ISkillsType {
 const skills: ISkillsType[] = [
   {
     name: 'React JS',
-    icon: 'react1.png',
+    icon: 'react.png',
   },
   {
     name: 'JavaScript',
@@ -18,11 +18,11 @@ const skills: ISkillsType[] = [
   },
   {
     name: 'Sass(Scss)',
-    icon: 'sass1.png',
+    icon: 'sass.png',
   },
   {
     name: 'Tailwind',
-    icon: 'tailwind1.png',
+    icon: 'tailwind.png',
   },
   {
     name: 'Next JS',
@@ -34,11 +34,11 @@ const skills: ISkillsType[] = [
   },
   {
     name: 'Redux',
-    icon: 'redux1.png',
+    icon: 'redux.png',
   },
   {
     name: 'Solidity',
-    icon: 'solidity1.png',
+    icon: 'solidity.png',
   },
   {
     name: 'Directus API',

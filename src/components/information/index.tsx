@@ -9,30 +9,36 @@ export default function Information() {
         <div className={styles.content}>
           <p></p>
           <p>
-            <a href="mailto:furkanilhanresmi@gmail.com">furkanilhanresmi@gmail.com</a>
+            <a href="mailto:furkanilhanresmi@gmail.com">
+              furkanilhanresmi@gmail.com
+            </a>
           </p>
           <p>Istanbul, Turkiye</p>
           <div className={styles.social}>
             <a
               href="https://github.com/ilhanfurkan?tab=overview&from=2023-12-01&to=2023-12-31"
+              aria-label="furkan ilhan's github account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'github'} />
             </a>
             <a
               href="https://www.linkedin.com/in/furkan-ilhan/"
+              aria-label="furkan ilhan's linkedin account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'linkedin'} />
             </a>
             <a
               href="https://www.instagram.com/llhanfurkan/"
+              aria-label="furkan ilhan's instagram account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'instagram'} />
             </a>
             <a
               href="https://twitter.com/1Furkanilhan"
+              aria-label="furkan ilhan's twitter account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'twitter'} />
