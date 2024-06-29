@@ -51,6 +51,12 @@ const portfolio: PortfolioType[] = [
     link: 'https://binance-pi.vercel.app/',
   },
   {
+    title: 'Art Museum',
+    desc: 'Not finished, Framer motion, Tailwind Css, NextJS, TypeScript, Responsive Design(will be made)',
+    img: 'https://res.cloudinary.com/ddfqedsqq/image/upload/v1718312521/michelangelo.jpg',
+    link: 'https://art-gallery-three-pi.vercel.app/',
+  },
+  {
     title: 'Denizcilik Tahkim',
     desc: 'Responsive Design, Html, Css',
     img: Images.DTK,
@@ -60,7 +66,7 @@ const portfolio: PortfolioType[] = [
     title: 'Blog',
     desc: 'NextJS, SCSS, TypeScript, Responsive Design',
     img: Images.Blog,
-    link: 'https://github.com/ilhanfurkan/blog',
+    link: 'https://blog-delta-eight-11.vercel.app/',
   },
 ];
 
