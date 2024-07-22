@@ -22,7 +22,6 @@
   padding-inline: 140px;
   box-sizing: border-box;
   transition: bottom 600ms ease-out;
-  border: 1px solid red;
 }
 .container_visible::after {
   position: absolute;
