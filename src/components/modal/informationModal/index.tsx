@@ -3,7 +3,7 @@ import styles from './modal.module.css';
 import info, { IInfoType } from '../../../config/information.config';
 import Icon from '../../shared/icons/icons';
 import skills, { ISkillsType } from '../../../config/skills.config';
-import PDF from '../../../assets/pdf/Furkan_Ilhan_CV.pdf';
+import PDF from '../../../assets/pdf/Furkan-Ilhan-CV.pdf';
 
 interface PropsTypes {
   isOpen: boolean;
@@ -41,7 +41,7 @@ export default function Modal(props: PropsTypes) {
                       <span>{x.title}: </span>
                       <a
                         href={PDF}
-                        download="Furkan_Ilhan_CV.pdf"
+                        download="Furkan-Ilhan-CV.pdf"
                         target="_blank"
                         rel="noreferrer">
                         {x.describe}
