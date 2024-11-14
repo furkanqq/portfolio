@@ -121,6 +121,7 @@ function Modal({
           </a>
           .
         </p>
+        <hr />
         <button
           className={styles.infoClose}
           onClick={() =>
