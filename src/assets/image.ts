@@ -1,13 +1,13 @@
 import Foto from './image/1684620138660.jpeg';
-import DTK from './image/denizcilikTahkim.jpeg';
-import NFT from './image/nft.webp';
+import DTK from './image/denizcilikTahkim.png';
 import Binance from './image/binance.png';
-import Kripto from './image/kripto2.jpeg';
 import Blog from './image/blogger.png';
-import Solution from './image/solution.jpeg';
-import Landing from './image/landing1.jpeg';
+import Solution from './image/solution.png';
 import NPM from './image/npm.png';
-import IDO from './image/ido.png';
+import GL from './image/gl.png';
+import MV from './image/mv.png';
+import ART from './image/art.png';
+import BLN from './image/bln.png';
 
 type ImagesType = {
   [key: string]: any;
@@ -16,14 +16,14 @@ type ImagesType = {
 const Images: ImagesType = {
   Foto,
   DTK,
-  NFT,
   Binance,
-  Kripto,
   Blog,
   Solution,
-  Landing,
+  BLN,
   NPM,
-  IDO,
+  GL,
+  MV,
+  ART,
 };
 
 export default Images;

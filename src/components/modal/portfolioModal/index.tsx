@@ -32,6 +32,11 @@ export default function PortfolioModal(props: PropsTypes) {
     }
   }, [props.isChoose]);
 
+  const [modalVisible, setModalVisible] = React.useState({
+    visible: true,
+    link: '',
+  });
+
   return (
     <React.Fragment>
       <div
@@ -59,13 +64,29 @@ export default function PortfolioModal(props: PropsTypes) {
                   index === hoveredCardIndex ? styles.infoHover : styles.info
                 }>
                 <p>{x.desc}</p>
-                <a href={x.link} target="_blank" rel="noreferrer">
-                  <button className={styles.direction}>Visit</button>
-                </a>
+                {x.visit ? (
+                  <a href={x.link} target="_blank" rel="noreferrer">
+                    <button className={styles.direction}>Visit</button>
+                  </a>
+                ) : (
+                  <button
+                    className={styles.direction}
+                    onClick={() =>
+                      setModalVisible(() => ({
+                        link: x.link,
+                        visible: true,
+                      }))
+                    }>
+                    Visit
+                  </button>
+                )}
               </div>
             </div>
           ))}
         </div>
+        {modalVisible.visible && (
+          <Modal link={modalVisible.link} setModalVisible={setModalVisible} />
+        )}
       </div>
       <div
         className={
@@ -76,5 +97,41 @@ export default function PortfolioModal(props: PropsTypes) {
           props.isChoose ? styles.backgroundOne : styles.backgroundOneHidden
         }></div>
     </React.Fragment>
+  );
+}
+
+function Modal({
+  link,
+  setModalVisible,
+}: {
+  link: string;
+  setModalVisible: (value: { visible: boolean; link: string }) => void;
+}) {
+  return (
+    <div className={styles.infoModal}>
+      <div className={styles.infoCard}>
+        <label className={styles.infoTitle}>Information Text</label>
+        <p className={styles.infoContent}>
+          This project was developed during my time at a previous company, and
+          it has been taken offline by the company. Due to legal reasons, the
+          source code and content cannot be shared. You can view the former link
+          of the project here:{' '}
+          <a href={link} target="_blank" rel="noreferrer">
+            {link}
+          </a>
+          .
+        </p>
+        <button
+          className={styles.infoClose}
+          onClick={() =>
+            setModalVisible({
+              link: '',
+              visible: false,
+            })
+          }>
+          Close
+        </button>
+      </div>
+    </div>
   );
 }

@@ -95,7 +95,7 @@
 }
 
 .title h1 {
-  font-size: 140px;
+  font-size: 100px;
   margin: 0;
   font-weight: 800;
   display: flex;
@@ -227,13 +227,49 @@
   justify-content: space-between;
 }
 
-.direction {
-  position: relative;
+
+
+.infoModal {
+  position: fixed;
   width: 100%;
-  height: 52px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.infoCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 348px;
+  padding: 24px 12px;
+  background-color: white;
+  border-radius: 8px;
+  gap: 12px;
+}
+.infoTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+.infoContent {
+  text-align: center;
+  padding-inline: 24px;
+}
+
+.infoClose {
+  position: relative;
+  width: 80%;
+  height: 48px;
   margin: 0;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   border-radius: 4px;
   cursor: pointer;
@@ -244,13 +280,13 @@
   color: white;
 }
 
-.direction::after {
-  content: 'Visit';
+.infoClose::after {
+  content: 'Close';
   position: absolute;
   left: 0;
-  top: 52px;
+  top: 48px;
   width: 100%;
-  height: 52px;
+  height: 48px;
   background-color: #efefef;
   transition: 400ms;
   display: flex;
@@ -259,17 +295,17 @@
   color: black;
 }
 
-.direction:hover::after {
+.infoClose:hover::after {
   top: 0;
   transition: 300ms;
 }
 
-.direction:hover {
-  padding-bottom: 50px;
+.infoClose:hover {
+  padding-bottom: 46px;
   transition: 400ms;
 }
 
-.direction:active {
+.infoClose:active {
   transform: scale(0.95);
   transition: 200ms;
 }
