@@ -33,7 +33,7 @@ export default function PortfolioModal(props: PropsTypes) {
   }, [props.isChoose]);
 
   const [modalVisible, setModalVisible] = React.useState({
-    visible: true,
+    visible: false,
     link: '',
   });
 
@@ -119,9 +119,7 @@ function Modal({
           <a href={link} target="_blank" rel="noreferrer">
             {link}
           </a>
-          .
         </p>
-        <hr />
         <button
           className={styles.infoClose}
           onClick={() =>
