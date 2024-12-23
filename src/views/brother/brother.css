@@ -1,0 +1,103 @@
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.text {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+  text-align: center;
+}
+
+.text.stage-one {
+  animation: scaleAndFadeOut 3s ease-in-out;
+}
+
+.text.stage-two {
+  animation: scaleAndFadeOut 3s ease-in-out;
+}
+
+.text.stage-three {
+  animation: scaleAndFadeOut 3s ease-in-out;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  animation: growAndStop 3s ease-in-out;
+}
+
+/* Animations */
+@keyframes scaleAndFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+@keyframes growAndStop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  .image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1.2rem;
+    padding-inline: 60px;
+    border: 1px solid red;
+  }
+  .image {
+    max-width: 200px;
+  }
+}

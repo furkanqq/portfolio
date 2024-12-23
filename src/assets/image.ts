@@ -10,6 +10,7 @@ import ART from './image/art.webp';
 import BLN from './image/bln.webp';
 import Blind from './image/blindlover.webp';
 import Love from './image/love.jpg';
+import Babe from './image/babe.jpeg';
 
 type ImagesType = {
   [key: string]: any;
@@ -28,6 +29,7 @@ const Images: ImagesType = {
   ART,
   Blind,
   Love,
+  Babe,
 };
 
 export default Images;
