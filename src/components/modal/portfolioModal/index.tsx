@@ -23,13 +23,15 @@ export default function PortfolioModal(props: PropsTypes) {
   }
 
   React.useEffect(() => {
+    let timeout: NodeJS.Timeout;
     if (props.isChoose) {
-      setTimeout(() => {
+      timeout = setTimeout(() => {
         setTimeOutChoose(true);
       }, 500);
     } else {
       setTimeOutChoose(false);
     }
+    return () => clearTimeout(timeout); // Timeout temizleme
   }, [props.isChoose]);
 
   const [modalVisible, setModalVisible] = React.useState({
@@ -58,7 +60,8 @@ export default function PortfolioModal(props: PropsTypes) {
               onMouseOver={() => handleCardHover(index)}
               onMouseLeave={handleCardNotHover}>
               <h1>{x.title}</h1>
-              <img src={x.img} alt="preview" />
+              <img src={x.img} alt="preview" loading="lazy" />
+              <iframe src="iframe" loading="lazy"></iframe>
               <div
                 className={
                   index === hoveredCardIndex ? styles.infoHover : styles.info

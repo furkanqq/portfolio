@@ -8,6 +8,11 @@ declare module '*.jpeg' {
   export default content;
 }
 
+declare module '*.jpg' {
+  const content: { [className: string]: string };
+  export default content;
+}
+
 declare module '*.png' {
   const content: { [className: string]: string };
   export default content;
@@ -27,4 +32,3 @@ declare module '*.pdf' {
   const content: { [className: string]: string };
   export default content;
 }
-

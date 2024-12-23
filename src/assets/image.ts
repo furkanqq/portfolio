@@ -8,6 +8,8 @@ import GL from './image/gl.webp';
 import MV from './image/mv.webp';
 import ART from './image/art.webp';
 import BLN from './image/bln.webp';
+import Blind from './image/blindlover.webp';
+import Love from './image/love.jpg';
 
 type ImagesType = {
   [key: string]: any;
@@ -24,6 +26,8 @@ const Images: ImagesType = {
   GL,
   MV,
   ART,
+  Blind,
+  Love,
 };
 
 export default Images;

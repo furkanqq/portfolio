@@ -31,10 +31,25 @@ const portfolio: PortfolioType[] = [
     visit: true,
   },
   {
+    title: 'Blind Lover',
+    desc: 'NextJS, TailwindCSS, TypeScript, Responsive Design, Jotai',
+    img: Images.Blind,
+    link: 'https://blindlover.com',
+    visit: true,
+  },
+  {
     title: 'NPM Packages',
     desc: 'NodeJS, JS, Npm Package Manager',
     img: Images.NPM,
     link: 'https://www.npmjs.com/~murki',
+    visit: true,
+  },
+
+  {
+    title: 'Denizcilik Tahkim',
+    desc: 'Responsive Design, Html, Css',
+    img: Images.DTK,
+    link: 'https://denizciliktahkim.org/',
     visit: true,
   },
   {
@@ -42,13 +57,6 @@ const portfolio: PortfolioType[] = [
     desc: 'Responsive Design, Html, Css',
     img: Images.MV,
     link: 'https://magevet.com.tr/demo/',
-    visit: true,
-  },
-  {
-    title: 'Denizcilik Tahkim',
-    desc: 'Responsive Design, Html, Css',
-    img: Images.DTK,
-    link: 'https://denizciliktahkim.org/',
     visit: true,
   },
   {
