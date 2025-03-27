@@ -31,7 +31,7 @@
 .container {
   height: 100vh;
   width: 100%;
-  position: relative;
+  position: absolute;
   transform: translateY(0);
   transition: transform 400ms ease-in-out;
   z-index: 9999;
@@ -40,6 +40,7 @@
 }
 
 .containerHidden {
+  position: absolute;
   transform: translateY(100%);
 }
 /* 
@@ -286,7 +287,6 @@
 }
 
 
-
 .infoModal {
   position: fixed;
   width: 100%;
@@ -295,7 +295,8 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  top: 0;
+  top: 0px;
+  left: 0px;
   background-color: rgba(0,0,0,0.5);
   backdrop-filter: blur(5px);
 }

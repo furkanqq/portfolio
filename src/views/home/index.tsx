@@ -14,8 +14,9 @@ export default function Home() {
           <h1>I am</h1>
           <h1>Furkan</h1>
           <p>
-            Web developer with 2 years experience living in Istanbul and working
-            with Balance Network.
+            I develop modern and high-performance web solutions, focusing on
+            user experience and efficiency to create innovative digital
+            projects. I am a Web Developer.
           </p>
         </div>
         <Footer />

@@ -11,6 +11,8 @@ import BLN from './image/bln.webp';
 import Blind from './image/blindlover.webp';
 import Love from './image/love.jpg';
 import Babe from './image/babe.jpeg';
+import Momey from './image/momey.webp';
+import FHTS from './image/fithouse.webp';
 
 type ImagesType = {
   [key: string]: any;
@@ -30,6 +32,8 @@ const Images: ImagesType = {
   Blind,
   Love,
   Babe,
+  Momey,
+  FHTS,
 };
 
 export default Images;

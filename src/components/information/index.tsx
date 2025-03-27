@@ -9,7 +9,9 @@ export default function Information() {
         <div className={styles.content}>
           <p></p>
           <p>
-            <a href="mailto:furkanilhanresmi@gmail.com">
+            <a
+              href="mailto:furkanilhanresmi@gmail.com"
+              title="furkan ilhan's mail address">
               furkanilhanresmi@gmail.com
             </a>
           </p>
@@ -18,6 +20,7 @@ export default function Information() {
             <a
               href="https://github.com/ilhanfurkan?tab=overview&from=2023-12-01&to=2023-12-31"
               aria-label="furkan ilhan's github account"
+              title="furkan ilhan's github account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'github'} />
@@ -25,6 +28,7 @@ export default function Information() {
             <a
               href="https://www.linkedin.com/in/furkan-ilhan/"
               aria-label="furkan ilhan's linkedin account"
+              title="furkan ilhan's linkedin account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'linkedin'} />
@@ -32,6 +36,7 @@ export default function Information() {
             <a
               href="https://www.instagram.com/llhanfurkan/"
               aria-label="furkan ilhan's instagram account"
+              title="furkan ilhan's instagram account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'instagram'} />
@@ -39,6 +44,7 @@ export default function Information() {
             <a
               href="https://twitter.com/1Furkanilhan"
               aria-label="furkan ilhan's twitter account"
+              title="furkan ilhan's twitter account"
               target="_blank"
               rel="noreferrer">
               <Icon icon={'twitter'} />

@@ -21,13 +21,13 @@ const portfolio: PortfolioType[] = [
     desc: 'NextJS, SCSS, Rest API, Redux, TypeScript, Responsive Design',
     img: Images.Solution,
     link: 'https://balance.software/',
-    visit: true,
+    visit: false,
   },
   {
     title: 'Art Museum',
-    desc: 'Not finished, Framer motion, Tailwind Css, NextJS, TypeScript, Responsive Design(will be made)',
+    desc: 'Not finished, Framer motion, Tailwind Css, NextJS, TypeScript, Responsive Design, Cloudinary',
     img: Images.ART,
-    link: 'https://art-gallery-three-pi.vercel.app/',
+    link: 'https://art-gallery-five-blond.vercel.app/',
     visit: true,
   },
   {
@@ -35,7 +35,14 @@ const portfolio: PortfolioType[] = [
     desc: 'NextJS, TailwindCSS, TypeScript, Responsive Design, Jotai',
     img: Images.Blind,
     link: 'https://blindlover.com',
-    visit: true,
+    visit: false,
+  },
+  {
+    title: 'Customer Tracking System',
+    desc: 'NextJS, TailwindCSS, TypeScript, Responsive Design, NetGSM, Mail, QR Code Scanner, Railway',
+    img: Images.FHTS,
+    link: 'It cannot be shared because it is an admin panel.',
+    visit: false,
   },
   {
     title: 'NPM Packages',
@@ -71,6 +78,13 @@ const portfolio: PortfolioType[] = [
     desc: 'NextJS, SCSS, TypeScript, Responsive Design',
     img: Images.Blog,
     link: 'https://blog-delta-eight-11.vercel.app/',
+    visit: true,
+  },
+  {
+    title: 'Meme Coin Page',
+    desc: 'NextJS, TailwindCSS, TypeScript, Responsive Design, Jotai',
+    img: Images.Momey,
+    link: 'https://www.momeycoin.com/',
     visit: true,
   },
   {

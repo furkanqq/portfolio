@@ -14,24 +14,23 @@ export default function PortfolioModal(props: PropsTypes) {
   );
   const [timeOutChoose, setTimeOutChoose] = React.useState(false);
 
-  function handleCardHover(index: number) {
+  const handleCardHover = React.useCallback((index: number) => {
     setHoveredCardIndex(index);
-  }
+  }, []);
 
-  function handleCardNotHover() {
+  const handleCardNotHover = React.useCallback(() => {
     setHoveredCardIndex(null);
-  }
+  }, []);
 
   React.useEffect(() => {
-    let timeout: NodeJS.Timeout;
     if (props.isChoose) {
-      timeout = setTimeout(() => {
+      const timeout = setTimeout(() => {
         setTimeOutChoose(true);
       }, 500);
+      return () => clearTimeout(timeout);
     } else {
       setTimeOutChoose(false);
     }
-    return () => clearTimeout(timeout); // Timeout temizleme
   }, [props.isChoose]);
 
   const [modalVisible, setModalVisible] = React.useState({
@@ -61,7 +60,7 @@ export default function PortfolioModal(props: PropsTypes) {
               onMouseLeave={handleCardNotHover}>
               <h1>{x.title}</h1>
               <img src={x.img} alt="preview" loading="lazy" />
-              <iframe src="iframe" loading="lazy"></iframe>
+              {/* <iframe src="iframe" loading="lazy"></iframe> */}
               <div
                 className={
                   index === hoveredCardIndex ? styles.infoHover : styles.info
@@ -87,10 +86,10 @@ export default function PortfolioModal(props: PropsTypes) {
             </div>
           ))}
         </div>
-        {modalVisible.visible && (
-          <Modal link={modalVisible.link} setModalVisible={setModalVisible} />
-        )}
       </div>
+      {modalVisible.visible && (
+        <Modal link={modalVisible.link} setModalVisible={setModalVisible} />
+      )}
       <div
         className={
           props.isChoose ? styles.backgroundTwo : styles.backgroundTwoHidden
@@ -110,6 +109,8 @@ function Modal({
   link: string;
   setModalVisible: (value: { visible: boolean; link: string }) => void;
 }) {
+  const closeModal = () => setModalVisible({ link: '', visible: false });
+
   return (
     <div className={styles.infoModal}>
       <div className={styles.infoCard}>
@@ -123,14 +124,7 @@ function Modal({
             {link}
           </a>
         </p>
-        <button
-          className={styles.infoClose}
-          onClick={() =>
-            setModalVisible({
-              link: '',
-              visible: false,
-            })
-          }>
+        <button className={styles.infoClose} onClick={closeModal}>
           Close
         </button>
       </div>
