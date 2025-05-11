@@ -30,7 +30,7 @@
   .image {
     position: absolute;
     width: 400px;
-    height: 550px;
+    height: 300px;
     animation: growAndStop 3s ease-in-out;
   }
   

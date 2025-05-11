@@ -95,7 +95,6 @@
   .text {
     font-size: 1.2rem;
     padding-inline: 60px;
-    border: 1px solid red;
   }
   .image {
     max-width: 200px;
