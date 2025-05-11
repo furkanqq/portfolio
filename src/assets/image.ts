@@ -11,6 +11,7 @@ import Foto from './image/1684620138660.jpeg';
 // import Blind from './image/blindlover.webp';
 import Love from './image/love.jpg';
 import Babe from './image/babe.jpeg';
+import Robin from './image/robin.png';
 // import Momey from './image/momey.webp';
 // import FHTS from './image/fithouse.webp';
 
@@ -22,6 +23,7 @@ const Images: ImagesType = {
   Foto,
   Love,
   Babe,
+  Robin,
   // DTK,
   // Binance,
   // Blog,
