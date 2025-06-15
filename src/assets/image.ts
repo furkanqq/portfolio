@@ -12,6 +12,7 @@ import Foto from './image/1684620138660.jpeg';
 import Love from './image/love.jpg';
 import Babe from './image/babe.jpeg';
 import Robin from './image/robin.png';
+import Daddy from './image/daddy.png';
 // import Momey from './image/momey.webp';
 // import FHTS from './image/fithouse.webp';
 
@@ -24,6 +25,7 @@ const Images: ImagesType = {
   Love,
   Babe,
   Robin,
+  Daddy,
   // DTK,
   // Binance,
   // Blog,

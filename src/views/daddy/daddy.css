@@ -1,0 +1,88 @@
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  
+  .text {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  .text.stage-one {
+    animation: scaleAndFadeOut 3s ease-in-out;
+  }
+  
+  .text.stage-two {
+    animation: scaleAndFadeOut 3s ease-in-out;
+  }
+
+  .text.stage-three {
+    animation: scaleAndFadeOut 3s ease-in-out;
+  }
+  
+  .image {
+    position: absolute;
+    width: 400px;
+    height: 520px;
+    animation: growAndStop 3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .image {
+      width: 400px;
+      height: 300px;
+    }
+    .text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @keyframes scaleAndFadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
+  @keyframes growAndStop {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
