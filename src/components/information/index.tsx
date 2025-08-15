@@ -18,7 +18,7 @@ export default function Information() {
           <p>Istanbul, Turkiye</p>
           <div className={styles.social}>
             <a
-              href="https://github.com/ilhanfurkan?tab=overview&from=2023-12-01&to=2023-12-31"
+              href="https://github.com/furkanqq"
               aria-label="furkan ilhan's github account"
               title="furkan ilhan's github account"
               target="_blank"
